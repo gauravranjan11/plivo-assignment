@@ -10,7 +10,7 @@ Please follow [Docker Setup](https://docs.docker.com/docker-for-mac/install/) to
 * It would pull docker images for mysql and redis and would start the app on port 8080.
 You should see something like below. 
 ```
-C02TR3A1G8WN:plivo-assignment granjan$ docker-compose up 
+$ docker-compose up 
 Starting plivo-mysql ... done
 Starting plivo-redis ... done
 Starting plivoassignment_app_1 ... done
