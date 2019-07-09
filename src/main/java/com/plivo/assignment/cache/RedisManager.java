@@ -43,12 +43,6 @@ public class RedisManager {
         }
     }
 
-    public String put(Object key, Object value) {
-
-        return commands.set(key, value);
-
-    }
-
 
     public String put(Object key, Object value, long time) {
 
@@ -60,12 +54,6 @@ public class RedisManager {
     public Object get(Object key) {
 
         return commands.get(key);
-
-    }
-
-    public Long delete(Object key) {
-
-        return commands.del(key);
 
     }
 

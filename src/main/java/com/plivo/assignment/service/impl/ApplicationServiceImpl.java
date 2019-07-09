@@ -47,7 +47,6 @@ public class ApplicationServiceImpl implements ApplicationService {
                 case "STOP\n":
                 case "STOP\r":
                 case "STOP\r\n": {
-                    System.out.println("i am here");
                     keyCacheService.put(smsDTO.getFrom() + ":" + smsDTO.getTo(), "STOP", stopTTL);
                     break;
                 }

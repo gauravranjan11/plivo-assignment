@@ -16,18 +16,8 @@ public class KeyCacheServiceImpl implements ICacheService<String, String> {
 
 
     @Override
-    public boolean containsKey(String s) {
-        return false;
-    }
-
-    @Override
     public String getValue(String key) {
         return (String) redisManager.get(key);
-    }
-
-    @Override
-    public void remove(String key) {
-
     }
 
     @Override
@@ -41,8 +31,4 @@ public class KeyCacheServiceImpl implements ICacheService<String, String> {
         return redisManager.checkLimit(s, limit, expiry);
     }
 
-    @Override
-    public Map<byte[], byte[]> getAll() {
-        return null;
-    }
 }
