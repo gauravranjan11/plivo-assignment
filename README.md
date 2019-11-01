@@ -1,4 +1,4 @@
-# Plivo Assignment
+# springboot-docker-redis-ratelimit
 
 Find more details about how to set up, develop, and operate this service:
 
